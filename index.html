@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/base.css">
+        <title>自己紹介ページ</title>
+    </head>
+
+    
+    <body>
+        <header id="top">
+            <h1>self-introduce</h1>
+            
+            <p class="hoge">現在の日時:</p>
+            <script>
+            dd = new Date();
+            document.write(dd.toLocaleString());
+            </script>
+            
+            <h2 id="title">初めまして、かみやしおんです。</h2>
+            
+            <ul id="nav">
+                <li>Fovorite</li>
+                <li>Background</li>
+                <li>In my student days</li>
+            </ul>
+            
+        </header>
+        
+        <div class="main">
+            <h1 class="font-style">Fovorite</h1>
+            <ol>
+                <li>オードリー（芸人）が好き</li>
+                <li>
+                    映画と本が好き
+                    <ul>
+                        <li><a href="faborite.html" target="_blank">ぼくの好きな映画・本はこちら</a></li>
+                    </ul>
+                </li>
+                <li>
+                    韓国が好き
+                    <ul>
+                        <li><a href="korea.html" target="_blank">詳しくはこちら</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="main-b">
+            <h1 class="font-style">Background</h1>
+            <p>小中高を福岡で過ごす。小学生の時に、都会で華やかな学生時代を過ごしたいとの思いで東京の中学を受験するも、失敗に終わる。中高は臥薪嘗胆の思いで勉強に励んだが、大学受験当日にお腹を下すという絶望的な展開に直撃。しかしなんとか当大学に拾ってもらい上京に成功。現在は、華やかさとはかけ離れた生活を送っており、青春とは何なのか探求中である。</p>
+            
+            <h2 class="font-style">In my students days</h2>
+            <h4>●freshman</h4>
+            <p>接客と塾講師のアルバイト開始<p>
+            <h4>●sophoremore</h4>
+            <p>TOEIC 830点取得</p>
+            <p>IT企業のインターンシップでDBを作る</p>
+            <p>ビジネスコンテストで豆腐の売り上げUp立案</p>
+            <h4>●junior</h4>
+            <p>交換留学決定</p>
+            <p>ITインターン予定</p>
+            <h4>●senior</h4>
+            <p>１年間慶熙（キョンヒ）大学留学予定</p>
+        </div>
+        
+        <h4><a href="#top">トップに戻る</a></h4>
+        
+        <hr />
+        
+        <script>
+        // id="title"に表示
+        $("#title").typed({
+             strings: [
+               'hello, world.'
+              ],
+             typeSpeed: 1 // アニメーションのスピード
+        });
+
+        // 文に改行を含める場合
+        $("#typed").typed({ strings: ["この文は\n改行されます."] });
+
+        </script>
+        
+        <footer>
+            Copyright &copy; Shion KAMIYA. All Rights Reserved.
+        </footer>
+        
+    </body>
+</html>
